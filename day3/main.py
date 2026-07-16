@@ -1,4 +1,5 @@
 #Day 3
+"""
 from dataclasses import dataclass
 class A:
     def display(self):
@@ -21,9 +22,7 @@ for cls in D.__mro__:
 
 @dataclass
 class Student:
-    name: str
-    age: int
-    marks: list
+    
 
     def calculate_total(self):
         return sum(self.marks)
@@ -52,5 +51,11 @@ total = student.calculate_total()
 average = student.calculate_average()
 grade = student.calculate_grade()
 print(f"Total Marks: {total}\nAverage: {average}\nGrade: {grade}")
+"""
 
 
+from invoice import Invoice
+invoice1  = Invoice(invoice_number = "IN001", customer = "Monika", amount = 100.0, status = "Pending", paid = False)
+invoice2  = Invoice(invoice_number = "IN001", customer = "Monika", amount = 100.0, status = "Pending", paid = False)
+print(invoice1)
+print(invoice1 == invoice2)
