@@ -53,9 +53,16 @@ grade = student.calculate_grade()
 print(f"Total Marks: {total}\nAverage: {average}\nGrade: {grade}")
 """
 
+from invoice import Invoice, InvoiceController
 
-from invoice import Invoice
-invoice1  = Invoice(invoice_number = "IN001", customer = "Monika", amount = 100.0, status = "Pending", paid = False)
-invoice2  = Invoice(invoice_number = "IN001", customer = "Monika", amount = 100.0, status = "Pending", paid = False)
+        
+
+invoice1  = Invoice(invoice_number = "IN001", customer = "Monika", amount = 100.0, status = "Draft", paid = False)
 print(invoice1)
-print(invoice1 == invoice2)
+controller = InvoiceController(invoice1)
+controller.validate()
+print("Invoice is valid")
+print(invoice1.status)
+controller.submit()
+print(invoice1.status)
+
