@@ -8,3 +8,4 @@ with open("Numbers.txt", "w") as file:
     numbers = [int(i) for i in input("Enter the numbers:").split()]
     for i in numbers:
         file.write(f"Number: {i}\n")
+

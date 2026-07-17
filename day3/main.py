@@ -65,4 +65,5 @@ print("Invoice is valid")
 print(invoice1.status)
 controller.submit()
 print(invoice1.status)
+print(__name__)
 

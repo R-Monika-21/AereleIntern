@@ -1,0 +1,7 @@
+Invoice Number: 27
+Customer Name: Monika
+Item: Phone
+Quantity: 5
+Price: 50000.0
+Total: 250000.0
+------------------------------

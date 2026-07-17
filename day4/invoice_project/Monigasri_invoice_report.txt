@@ -1,0 +1,7 @@
+Invoice Number: 26
+Customer Name: Monigasri
+Item: Charger
+Quantity: 3
+Price: 1290.0
+Total: 4566.6
+------------------------------
